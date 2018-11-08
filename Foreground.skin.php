@@ -6,7 +6,7 @@
  * @file
  * @ingroup Skins
  */
- 
+
 
 class Skinforeground extends SkinTemplate {
 	public $skinname = 'foreground', $stylename = 'foreground', $template = 'foregroundTemplate', $useHeadElement = true;
@@ -71,7 +71,7 @@ class foregroundTemplate extends BaseTemplate {
 				$markers = array("&lt;a", "&lt;/a", "&gt;");
 				$tags = array("<a", "</a", ">");
 				$body = str_replace($markers, $tags, $out);
-				break;	
+				break;
 			default:
 				$body = '';
 				break;
@@ -99,7 +99,7 @@ class foregroundTemplate extends BaseTemplate {
 				$poweredbyMakeType = 'withImage';
 				break;
 			default:
-				break;	
+				break;
 		}
 ?>
 <!-- START FOREGROUNDTEMPLATE -->
@@ -110,7 +110,7 @@ class foregroundTemplate extends BaseTemplate {
 					<a href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>">
 					<?php if ($wgForegroundFeatures['navbarIcon'] != '0') { ?>
 						<img alt="<?php echo $this->text('sitename'); ?>" class="top-bar-logo" src="<?php echo $this->text('logopath') ?>">
-					<?php } ?>					
+					<?php } ?>
 					<div class="title-name" style="display: inline-block;"><?php echo $wgForegroundFeatures['wikiName']; ?></div>
 					</a>
 					</div>
@@ -165,12 +165,12 @@ class foregroundTemplate extends BaseTemplate {
 			</ul>
 		</section>
 		</nav>
-		
+
 		<?php if ($wgForegroundFeatures['NavWrapperType'] != '0') echo "</div>"; ?>
-		
+
 		<div id="page-content">
 		<div class="row">
-				<div class="large-12 columns">
+				<div class="large-12 columns" style="padding: 0;">
 					<!-- Output page indicators -->
 					<?php echo $this->getIndicators(); ?>
 					<!-- If user is logged in output echo location -->
@@ -221,7 +221,7 @@ class foregroundTemplate extends BaseTemplate {
 					<h5 id="siteSub" class="subtitle"><?php $this->html('subtitle') ?></h5>
 					<div id="contentSub" class="clear_both"></div>
 					<div id="bodyContent" class="mw-bodytext">
-						<?php 
+						<?php
 							switch ($wgForegroundFeatures['enableTabs']) {
 								case true:
 									echo $body;
@@ -251,9 +251,9 @@ class foregroundTemplate extends BaseTemplate {
 					<ul id="footer-left">
 						<?php foreach ( $this->getFooterLinks( "flat" ) as $key ) { ?>
 							<li id="footer-<?php echo $key ?>"><?php $this->html( $key ) ?></li>
-						<?php } ?>									
+						<?php } ?>
 					</ul>
-					</div>	
+					</div>
 					<div id="footer-right-icons" class="<?php echo $footerRightClass;?>">
 					<ul id="poweredby">
 						<?php foreach ( $this->getFooterIcons( $poweredbyType ) as $blockName => $footerIcons ) { ?>
@@ -263,16 +263,16 @@ class foregroundTemplate extends BaseTemplate {
 							</li>
 						<?php } ?>
 					</ul>
-					</div>								
+					</div>
 				</div>
 			</footer>
 
 		</div>
-		
+
 		<?php $this->printTrail(); ?>
 			<?php if ($this->data['isarticle'] && $wgForegroundFeatures['addThisPUBID'] !== '') { ?>
 				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=<?php echo $wgForegroundFeatures['addThisPUBID']; ?>" async="async">></script>
-			<?php } ?>	
+			<?php } ?>
 		</body>
 		</html>
 
