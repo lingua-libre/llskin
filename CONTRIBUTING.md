@@ -1,3 +1,11 @@
+# Specifics for LinguaLibre
+* Colors:
+  * #00ab9e for blue-green (in the logo)
+  * #a3dbd7 for light blue-green
+  * #393939 for dark grey (in the logo)
+* Fonts:
+  * Linux Libertine Semi-bold for the logo
+
 # Contributing to Foreground
 
 ## Bug fixes
