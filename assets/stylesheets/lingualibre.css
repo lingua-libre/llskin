@@ -214,7 +214,6 @@ pre {
 /**************
  * MOBILE MENU
  *************/
-
 @media ( max-width: 767px ) {
     nav.top-bar{
         height: 300px;
@@ -368,7 +367,7 @@ pre {
   }
   
   .top-bar .toggle-topbar.menu-icon a span::after{
-    left: 240px;
+    left: 255px;
   }
     
 }
