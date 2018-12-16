@@ -306,8 +306,8 @@ pre {
   }
   
   .top-bar #top-bar-left {
-      height: 0px;
-      padding-top: 0px;
+      height: 0px !important;
+      padding-top: 0px !important;
   }
   
   .menu-icon a{
