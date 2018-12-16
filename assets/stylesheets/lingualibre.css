@@ -209,3 +209,200 @@ pre {
     background-color: #FFF;
     color: #000;
 }
+
+
+/**************
+ * MOBILE MENU
+ *************/
+
+@media ( max-width: 767px ) {
+    nav.top-bar{
+        height: 300px;
+    }
+  
+  .top-bar-logo{
+      margin-top: 50px;
+      margin-left: 25%;
+  }
+  
+  #p-project-involved{
+      margin-top: 50px;
+  }
+  
+  .top-bar-section .divider{
+      display: none !important;
+  }
+  
+  .top-bar .toggle-topbar.menu-icon a span{
+    font-size: 30px;
+    left: 30% !important;
+    margin-left: 40%;
+  }
+  
+  .top-bar .toggle-topbar.menu-icon {
+      margin-top: -16px;
+      top: 50%;
+      left: 52%;
+      width: 150px;
+  }
+  nav.top-bar .title-area {
+      height: auto;
+      width: 100%;
+      display: block;
+  }
+  
+  .top-bar .toggle-topbar.menu-icon {
+      margin-top: -16px;
+      top: 50%;
+      width: 100%;
+      background: #000;
+  }
+  
+  .top-bar .toggle-topbar.menu-icon a {
+    height: 34px;
+    line-height: 33px;
+    padding: 0 2.5rem 0 0.9375rem;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0%;
+    background: #000;
+  }
+  
+  .top-bar .name {
+      font-size: 16px;
+      height: 0;
+      margin: 0;
+      width: 100%;
+      border: none;
+      background: #000;
+      position: fixed;
+  }
+  
+  nav.top-bar .title-area .title-name .top-bar-logo{
+      width: 50%;
+      height: auto;
+      max-height: none;
+  }
+  
+  nav.top-bar {
+      margin-top: 0px;
+      height: 200px;
+  }
+  
+  .top-bar-section{
+      display: none;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      box-shadow: 1px 1px 1px #ddd;
+      height: 200px;
+      background: #f2f2f2;
+      text-align: center;
+      z-index: 4000;
+  }
+  
+  .top-bar-left{
+      padding-top: 0px;
+  }
+  
+  .top-bar #top-bar-left {
+      height: 0px;
+      padding-top: 0px;
+  }
+  
+  .menu-icon a{
+      z-index: 80000;
+  }
+  
+  .menu-icon a:focus{
+      background: none;
+      outline: none;
+  }
+  
+  .menu-icon a:active{
+      background: none;
+      outline: none;
+  }
+  
+  #searchInput {
+      font-size: 1.2em;
+      padding: 0.2em;
+      margin: 0.2em;
+      border-radius: 30px;
+      padding: 10px;
+  }
+  
+  .top-bar form{
+      margin-top: 60px;
+  }
+  
+  .top-bar .button.search {
+      margin-left: 10px;
+      border-radius: 30px;
+      padding: 7px 10px;
+  }
+  
+  .top-bar-section .has-dropdown{
+      display: inline-block;
+  }
+  
+  #p-project-involved{
+      margin-top: 20px;
+  }
+  
+  #page-content{
+      margin-top: 0px;
+  }
+  
+  ::placeholder{
+      font-size: 15px;
+  }
+  
+  .mw-parser-output p {
+    font-size: 12px;
+  }
+  
+  .mw-headline{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .top-bar .toggle-topbar.menu-icon a span::after{
+    left: 240px;
+  }
+    
+}
+
+/* Tablets devices */
+
+@media (max-width: 1024px) and (min-width: 768px){
+    nav.top-bar .title-area .title-name .top-bar-logo{
+        width:  60%;
+    }
+    
+    .top-bar #top-bar-left{
+        padding-top: 10px;
+    }
+    
+    #searchInput {
+      font-size: 1.2em;
+      padding: 0.2em;
+      margin: 0.2em;
+      border-radius: 30px;
+      padding: 10px;
+    }
+    
+    .top-bar .button.search {
+        margin-left: 10px;
+        border-radius: 30px;
+        padding: 7px 10px;
+    }
+    
+     ::placeholder{
+      font-size: 15px;
+    }
+    
+    .top-bar-section{
+        display: block;
+    }
+}
