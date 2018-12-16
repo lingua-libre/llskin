@@ -60,7 +60,8 @@
 				"assets/scripts/foundation/foundation.reveal.js",
 				"assets/scripts/foundation/foundation.tab.js",
 				"assets/scripts/foundation/foundation.tooltip.js",
-				"assets/scripts/foreground.js"
+				"assets/scripts/foreground.js",
+				"assets/scripts/lingualibre.js"
 			],
 			"dependencies": [
 				"jquery.cookie",
