@@ -47,7 +47,7 @@ nav.top-bar .title-area .title-name a .title-name /* Le doublon n'est pas un bug
           color:#f2f2f2;
 } 
 
-nav.top-bar, /* barre principle */
+nav.top-bar, /* barre principale */
 #top-bar-right li.has-form, /* search bar */
 .top-bar-section li.active:not(.has-form) a:not(.button) { /* titre de menu */
     background-color: #f2f2f2;
@@ -208,4 +208,9 @@ pre {
     border-color: #C0C0C0;
     background-color: #FFF;
     color: #000;
+}
+.namespace
+{
+	background-color:lightgrey;
+	color:#393939;
 }
