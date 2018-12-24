@@ -233,6 +233,10 @@ input[type="color"],
 textarea {
     box-shadow: none;
 }
+/* hide Wikibase's "other language" menu */
+#p-lang {
+    display: none;
+}
 
 /**************
  * MOBILE MENU
