@@ -7,3 +7,5 @@ ehthumbs.db
 Thumbs.db
 .Spotlight-V100
 ._*
+.ftpconfig
+.ftpignore
