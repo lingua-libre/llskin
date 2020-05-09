@@ -1,0 +1,99 @@
+#footer {
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 62px;
+	margin-bottom: 40px;
+	padding-top: 24px;
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap-reverse;
+
+	color: #979797;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+#footer li {
+	list-style: none;
+}
+
+/* Left part */
+#footer-left-bottom {
+	display: flex;
+	margin-top: 8px;
+
+	font-size: 15px;
+	font-weight: bold;
+}
+#footer-left-bottom > li {
+	margin-right: 38px;
+}
+#footer-left-bottom > li:last-child {
+	margin-right: 0;
+}
+@media screen and (max-width: 640px) {
+	#footer-left-bottom {
+		flex-direction: column;
+		text-align: center;
+	}
+	#footer-left-bottom > li {
+		margin-right: 0px;
+	}
+}
+
+/* Footer icons */
+#footer-right-icons {
+	display: flex;
+	margin-left: auto;
+}
+#footer-right-icons > li {
+	margin-right: 12px;
+}
+#footer-right-icons > li:last-child {
+	margin-right: 0;
+}
+@media screen and (max-width: 320px) {
+	#footer-right-icons {
+		flex-direction: column;
+		margin: auto;
+		text-align: center;
+	}
+	#footer-right-icons > li {
+		margin-right: 0px;
+	}
+}
+
+/* Toolbox */
+#toolbox-menu {
+	position: relative;
+	height: 40px;
+}
+#toolbox-button {
+	height: 20px;
+	padding: 6px 10px 6px 36px;
+
+	background-color: #f8f9fa;
+	background-position: 6px center;
+	background-size: 22px;
+
+	border-radius: 2px;
+	border: solid 1px #a2a9b1;
+
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #222222;
+	line-height: 20px;
+}
+#toolbox-button:hover {
+	background-color: white;
+	color: #444444;
+}
+#toolbox-button:active {
+	background-color: #c8ccd1;
+	color: #000;
+	border-color: #72777d;
+}

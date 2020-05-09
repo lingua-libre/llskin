@@ -7,3 +7,7 @@ ehthumbs.db
 Thumbs.db
 .Spotlight-V100
 ._*
+.ftpconfig
+.ftpignore
+assets/stylesheets/RecordWizard/*
+assets/stylesheets/images/*
